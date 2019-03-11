@@ -5,8 +5,8 @@
 	// $senha = $_POST['senha'];
 	
 	if ($usuario == "Leo" && $senha == "123") {
-		header('location:site.php');
+		echo('Bem Vindo !');
 	}else{
-		encho('invalido');
+		echo('Dados Inválidos !');
 	}
 ?>
