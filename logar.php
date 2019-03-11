@@ -7,6 +7,6 @@
 	if ($usuario == "Leo" && $senha == "123") {
 		header('location:site.php');
 	}else{
-		header('location:login.html');
+		encho('invalido');
 	}
 ?>
