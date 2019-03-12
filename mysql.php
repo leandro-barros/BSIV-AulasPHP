@@ -9,9 +9,17 @@
     mysqli_set_charset($conexao,'UTF8');
 
     $sql = mysqli_query($conexao, "select * from categoria") or die("Erro");
-
+    echo "<table border='1'>
+            <tr>
+                <td>Nome</td>
+            </tr>";
+                
     while($dados=mysqli_fetch_assoc($sql)){
-        echo $dados['nome'].'</br>';
-    }
 
+        echo "
+            <tr>
+                <td>" .$dados['nome']."</td>
+            </tr>";
+    }
+    echo "</table>";
 ?>
